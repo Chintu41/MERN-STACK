@@ -1,0 +1,43 @@
+ <!-- click change color
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 50%;
+            height: 500px;
+            background-color: aqua;
+            border-radius: 20px;
+        }
+        .dark-theme{
+            background-color: black;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>theme change with switch with not operator</h1>
+    <button id="btn">toggle</button>
+    <div class ="container" id="container"></div>
+    <script>
+        const btn=document.getElementById("btn");
+        const container=document.getElementById("container");
+        let dark=false;
+        btn.addEventListener("click",()=>{
+            // if(dark)
+            //     dark=false;
+            // }else{
+            //     dark=true;
+            // }
+            dark = !dark;
+            if(dark){
+                container.classList.add("dark-theme");
+            }else{
+                container.classList.remove("dark-theme");
+            }
+        })
+    </script>
+ </body>
+ </html> -->

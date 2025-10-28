@@ -1,0 +1,436 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  width: 100%;
+}
+.container {
+  display: flex;
+  position:fixed;
+  justify-content:space-around;
+  top: 0%;
+  margin-top:30px;
+  align-items: center;
+  width: 95%;
+  box-shadow: 2px 2px 10px 2px#575850;
+  border-radius: 40px;
+  background-color:white;
+  z-index: 1000;
+}
+#logo{
+  width: 50px;
+  height: 50px;
+}
+.head-1{
+  display:flex;
+  justify-content: center;
+  align-items: center;  
+}
+nav {
+  display: flex;
+  justify-content:center;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size:15px;
+    color: black;
+    padding: 8px 14px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+  nav a:hover {
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(187, 26, 131), rgb(130, 2, 130));
+    color: #fff;
+   }
+.login {
+  display: flex;
+  gap: 20px;
+}
+.login button {
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  border: 10px;
+  width: 120px;
+  height: 30px;
+  color: white;
+  background: linear-gradient(to right, rgb(187, 26, 131), rgb(130, 2, 130));
+}
+.login a {
+  text-decoration: none;
+  color: black;
+  margin-top: 5px;
+  font-size: large;
+}
+/*home section*/
+.Home {
+  margin-top: 50px;
+}
+.first-icon img{
+  width: 50px;
+  height: 50px;
+}
+.home {
+  font-size: 30px;
+  display: flex;
+  gap: 40px;
+  margin-top:10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#img-1{
+  width:30px;
+}
+#head span {
+  background: linear-gradient(to left, rgb(115, 13, 121), rgb(73, 73, 163));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#head{
+  width: 80%;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.5 ease;
+}
+.slide img:hover{
+  transform: scale(1.01);
+}
+.slide {
+  width: 80%;
+  height: 70%;
+  margin-right: 30px;
+  border: 10px solid white;
+  border-radius: 20px;
+   transition: transform 0.3 ease;
+  box-shadow: 5px 5px 10px rgb(17, 13, 13);
+}
+.slide:hover{
+  transition: scale(0.1);
+}
+p {
+  font-size: 20px;
+  color: #575850;
+  font-style: italic;
+  font-family: sans-serif;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+#f-b{
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 35%;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(103, 164, 199), rgb(77, 57, 189));
+}
+#s-b {
+  font-size: large;
+  position:relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 30%;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid rgb(8, 7, 7);
+  background: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+#s-b::before {
+  position: absolute;
+  height: 100%;
+  border: 2px soild black;
+  background: linear-gradient(to right, rgb(187, 26, 131), rgb(130, 2, 130));
+  top: 0;
+  left: 0;
+  width: 0%;
+  content: "";
+  transition: width 0.8s ease;
+  z-index: -1;
+}
+#s-b:hover {
+  border: none;
+  color: rgb(236, 226, 226);
+}
+#s-b:hover::before {
+  width: 100%;
+}
+.sec-2{
+  margin-top: 80px;
+}
+#head-2 {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  gap:50px;
+  align-items: center;
+}
+.box-1{
+  border: 4px solid rgb(151, 21, 47);
+  border-radius: 30px;
+  width: 33%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(to right, rgb(127, 5, 30), rgb(199, 81, 108));
+}
+li{
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: rgb(185, 185, 178);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #0a0b05;
+}
+#box1,h2 {
+  font-size: 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#logo-1{
+  width: 100px;
+  animation: jump 2s infinite;
+}
+ @keyframes jump{
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(-30px); }
+    50%  { transform: translateY(0); }
+    75%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+.box-2 {
+  border: 4px solid rgb(76, 105, 207);
+  border-radius: 30px;
+  width: 33%;
+  height: 30%;
+  text-align: center;
+  background: linear-gradient(to right, rgb(40, 68, 168), rgb(88, 107, 163));
+}
+.section-3{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 80px;
+    font-style: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#sec-3,span{
+    color: rgb(69, 13, 121);
+}
+#head-3,h3{
+    font-size:25px;
+    font-style: normal;
+    font-family:sans-serif;
+    color: rgb(105, 102, 97);
+}
+#btn-3{
+    width:10%;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid rgb(244, 152, 13);
+    color: rgb(196, 127, 8);
+    background-color: rgb(237, 215, 187);
+}
+/*----card section---*/
+
+.card {
+  width: 320px;
+  height: 80%;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.card h1 {
+  font-size: 2rem;
+  color: #222;
+  margin: 10px 0;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 10px 0;
+}
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 6px 0;
+}
+
+.card button {
+  border: none;
+  background: #eee;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin: 5px 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.card button:hover {
+  background: #007bff;
+  color: white;
+}
+.card button {
+  background: #007bff;
+  color: #fff;
+}
+.card button:nth-last-of-type(2) {
+  background: #28a745;
+  color: #fff;
+  font-weight: 600;
+}
+
+.card button:nth-last-of-type(2):hover {
+  background: #218838;
+}
+.card button:last-of-type{
+  background: #ffca2c;
+  color: #222;
+  font-weight: 600;
+}
+#knowsyllabus button{
+  background: #ffc107;
+}
+.cards{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  gap: 40px;
+  height: 100vh;
+}
+#head-4{
+  font-size:60px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.process{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 60px;
+}
+#sp-2{
+  color: #b60b0b;
+}
+.card-1{
+  width: 20%;
+  height: 50%;
+  text-align: center;
+  border: 2px solid rgb(12, 180, 192);
+  background:linear-gradient(to left,rgb(238, 252, 255),rgb(137, 205, 221));
+  border-radius: 20px;
+}
+#hone{
+  color: blue;
+  font-size: 40px;
+  font-family:'Poppins',sans-serif;
+}
+#htwo{
+  color: #b61212;
+  font-family: 'Poppins',sans-serif;
+}
+#para{
+  font-family:'Poppins',sans-serif;
+  color:#0a0b05;
+  font-size: 17px;
+  font-style: normal;
+}
+.images{
+  display: flex;
+  justify-content: center;
+  gap: 21%;  
+}
+#img-1{
+  width: auto;
+  height: 60px;
+}
+.sec-6{
+  margin-top: 100px;
+}
+.h-6{
+  text-align: center;
+  font-size: 20px;
+  width: 28%;
+  margin-left: 35%;
+  color: white;
+  background-color: rgba(40, 16, 129, 0.753);
+  border-radius: 20px;
+  font-family:'Poppins',sans-serif;
+  border: 2px solid rgb(29, 15, 158);
+}
+.boxes{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  width: 35%;
+  height: 220px;
+  text-align: center;
+  display: block;
+  background-color: #efcde5;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+#png{
+  width: 20%;
+  height: 45px;
+  margin-top: 15px;
+}
+.content{
+  text-align: center;
+}
+#p-1 {
+  font-family:sans-serif;
+  color: #0a0b05;
+  font-family: 'Poppins',sans-serif;
+}
+#h-1{
+  font-family:'Poppins',sans-serif;
+  color: #b60b0b;
+}
+#hd{
+  font-size:60px;
+  margin-left: 41%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(10, 93, 134);
+}
+.sub{
+    text-align: center;
+}
+#p{
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+.sec-7{
+  background-color: #83b7c4;
+  width: 100%;
+  height:400px;
+}

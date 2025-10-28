@@ -1,0 +1,34 @@
+<!-- add event listener -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p id="countNumber"></p>
+      <button id="increment">+</button>
+      <button id="decrement">-</button>
+    </div>
+    <script>
+      const increment = document.getElementById("increment");
+      const decrement = document.getElementById("decrement");
+      const countNumber = document.getElementById("countNumber");
+      let count = 0;
+      countNumber.textContent = String(count);
+      increment.addEventListener("click", () => {
+        count++;
+        countNumber.textContent = String(count);
+      });
+      decrement.addEventListener("click", () => {
+        if(count===0){  //drecrement upto zero
+            return;
+        }
+        count--;
+        countNumber.textContent = String(count);
+      });
+    </script>
+  </body>
+</html>

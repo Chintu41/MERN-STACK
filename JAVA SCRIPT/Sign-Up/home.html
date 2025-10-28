@@ -1,0 +1,40 @@
+<!-- sign up form valiation -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <form id="signup">
+        <input type="text" id="email" placeholder="email">
+        <input type="password" id="password" placeholder="password">
+        <button id="btn">signup</button>
+        <p id="error"></p>
+    </form>
+    <script>
+        const signup=document.getElementById("signup");
+        const emailinput=document.getElementById("email");
+        const passwordinput=document.getElementById("password")
+        const error=document.getElementById("error")
+        signup.addEventListener("submit",(event)=>{
+            event.preventDefault();
+   
+        if(!emailinput.value.includes("@")){
+            alert("please include @ in vaild email address ");
+            error.textContent="please enter vaild email address"
+            return;
+        }
+        if(passwordinput.value.length<9||passwordinput.value.length>15){
+           
+            alert("password must be above 8 charcters & below 15 characters")
+            error.textContent="please enter valid password"
+            return;
+        }
+        error.style.color="red"
+        error.textContent="signup successfully"
+             })
+    </script>     
+ </body>
+ </html>
